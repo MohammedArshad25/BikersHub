@@ -3,6 +3,7 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import NavBar from './NavBar';
 import '../Style/home2.css';
+import Footer from "../components/Footer";
 
 class Home extends React.Component{
     constructor(props){
@@ -37,12 +38,12 @@ class Home extends React.Component{
                     <div className="h-date-container">
                         <div className="h-item">
                             <label for="datepicker" >Start Date</label>
-                            <DatePicker  onChange={(date)=>this.handleChangeStart(date)}
+                            <DatePicker className="DatePicker" onChange={(date)=>this.handleChangeStart(date)}
                                         selected={this.state.startDate}/>
                         </div>
                         <div className="h-item">
                             <label for="datepicker" >End Date</label>
-                            <DatePicker onChange={(date)=>this.handleChangeEnd(date)} 
+                            <DatePicker className="DatePicker"  onChange={(date)=>this.handleChangeEnd(date)} 
                                     minDate={(this.state.startDate)?this.state.startDate:null} 
                                     selected={this.state.endDate}
                                     />
@@ -54,7 +55,7 @@ class Home extends React.Component{
 
                   </div>
                   
-                          
+                  <Footer />       
             </div>
           
         );

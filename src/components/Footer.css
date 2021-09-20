@@ -30,3 +30,14 @@
     list-style-type: none;
     cursor: pointer;
 }
+
+@media screen and  (device-width: 360px) {
+    .Footer_container{
+        display:flex;
+        flex-direction: column;
+        background-color: #192727;
+        color : white;
+        width : 100%;
+        padding : 3rem 5rem;
+    }
+}

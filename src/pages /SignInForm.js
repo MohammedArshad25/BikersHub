@@ -21,7 +21,7 @@ class SignInForm extends React.Component {
     }
     canBeSubmitted(){
         const {email, password} = this.state;
-        return email.length>0 && password.length>6 ;
+        return email.length>0  && password.length>6 ;
     }
     handleSignUp(){
         this.props.history.push('/');
@@ -38,7 +38,7 @@ class SignInForm extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <div className="f-line">
                             <label className="f-label" for="email">Email</label>
-                            <input className="f-input"onChange={this.handleChange}type="mail" id="email"/>
+                            <input className="f-input" pattern=".+@gmail\.com" placeholder="arshadshaik@gmail.com" onChange={this.handleChange}type="mail" id="email"/>
                         </div>
                         <div className="f-line">
                             <label className="f-label" for="password">password</label>

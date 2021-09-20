@@ -1,13 +1,15 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import NavBar from "./NavBar";
+import Footer from "../components/Footer";
 
 
 
 class MyBookings1 extends React.Component{
     render(){
         return(
-            <div style={{marginBottom : "15%"}}>
+            <div>
+                  <div style={{marginBottom : "15%"}}>
                 <NavBar />
                 <h3 style={{color : "#568A88", textAlign:"center"}}>you dont have any bookings!! </h3>
             <div style={{display: "flex", flexDirection : "row", marginTop : "15%", marginLeft:"4%"}}>
@@ -26,9 +28,11 @@ class MyBookings1 extends React.Component{
                                                                                 fontSize: "large",
                                                                                 border : "1px solid white"}}>Logout</button></NavLink>
             </div>
-            
-            
+        
             </div>
+            <Footer />
+            </div>
+          
         );
     }
 }

@@ -2,6 +2,7 @@ import React from "react"
 import {Card, CardTitle, CardSubtitle, CardImg, CardBody, CardText, Button} from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from "./NavBar";
+import Footer from "../components/Footer";
 
 class Checkout extends React.Component {
 
@@ -41,6 +42,7 @@ class Checkout extends React.Component {
                         <Button style={{backgroundColor : "#568A88"}} onClick={this.goBackClick} width="50%">Go Back</Button>
                     </CardBody>
                 </Card>
+                <Footer />
             </div>  
         );
     }

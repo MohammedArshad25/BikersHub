@@ -11,6 +11,9 @@ import MyBookings1 from "./pages /MyBookings1";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 class App extends React.Component{
+    constructor(props){
+        super(props);
+    }
     render(){
         return(
                 <Router basename="/bike-rentals">
@@ -23,7 +26,7 @@ class App extends React.Component{
                         <Route path="/checkout" component={Checkout}></Route>
                         <Route path="/MyBookings" component={MyBookings}></Route>
                         <Route path="/MyBookings1" component={MyBookings1}></Route>
-                        <Footer />
+                        
                     </div>
                 </Router>
             )

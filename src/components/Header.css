@@ -1,0 +1,20 @@
+.Header{
+    display: block;
+    color : #568A88;
+    margin-top: 2;
+    font-family: 'Anton', sans-serif;
+}
+.h1{
+    margin-left: 42%;
+}
+@media screen and (device-width : 360px){
+    .Header{
+        display: block;
+        color : #568A88;
+        margin-top: 2rem;
+        font-family: 'Anton', sans-serif;
+    }
+  .h1{
+      margin-left : 35%;
+  }
+}

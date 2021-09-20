@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from 'reactstrap';
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import NavBar from "./NavBar";
+import Footer from "../components/Footer";
 
 class MyBookings extends React.Component{
     constructor(props){
@@ -30,6 +31,7 @@ class MyBookings extends React.Component{
                         <Button onClick={this.unbook}  color="danger">Unbook</Button>
                     </CardBody>
                 </Card>
+                <Footer />
             </div>
         );
     }

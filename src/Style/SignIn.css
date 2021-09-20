@@ -24,3 +24,14 @@
 .submit{
     margin : 2rem auto auto 2rem;
 }
+@media screen and (device-width : 360px){
+    .form-container{
+        display: block;
+        margin: 3rem  auto;
+        background-color: #568A88;
+        width : 80%;
+        padding : 2rem 0; 
+        border : 1px solid black;
+        
+    }
+}

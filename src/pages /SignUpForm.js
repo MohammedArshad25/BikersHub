@@ -52,17 +52,17 @@ class SignUpForm extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <div className="f-line">
                      <label className="f-label" for="fname">First Name</label> 
-                     <input className="f-input" onChange={this.handleChange} type = "text" id="fname" />
+                     <input className="f-input"  placeholder ="Arshad" pattern ="[a-z]{1,10}" maxLength="10"onChange={this.handleChange} type = "text" id="fname" />
                     </div>
                   
                     <div className="f-line">
                         <label  className="f-label" for="lname">Last Name</label> 
-                        <input  className="f-input" onChange={this.handleChange} type = "text" id="lname" />
+                        <input  className="f-input" placeholder ="Shaik" pattern ="[a-z]{1,10}" maxLength="10" onChange={this.handleChange} type = "text" id="lname" />
                     </div>
                     
                     <div className="f-line">
                         <label className="f-label" for="email">Email</label>
-                        <input className="f-input" onChange={this.handleChange} type="mail" id="email" />
+                        <input className="f-input" pattern=".+@gmail\.com" placeholder="arshadshaik@gmail.com" onChange={this.handleChange} type="mail" id="email" />
                     </div>
                     <div className="f-line">
                         <label className="f-label" for="password" >password</label>

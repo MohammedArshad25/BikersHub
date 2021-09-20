@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import NavBar from "./NavBar";
 import BikesCard from "./BikesCard";
 import Bike from "./Data";
+import Footer from "../components/Footer";
 
 class MainArea extends React.Component{
     constructor(props){
@@ -14,7 +15,7 @@ class MainArea extends React.Component{
         let bikeCards = this.state.bike.map(bikes => {
             return (
             
-                    <Col style={{marginLeft : "50px"}}>
+                    <Col style={{marginLeft : "5%" ,width:"40%"}}>
                         <BikesCard bikes={bikes} propdata={this.props} />
                     </Col>
                 
@@ -27,6 +28,7 @@ class MainArea extends React.Component{
                 <Row xs="4" style={{ marginBottom: "5%", marginLeft: "5%"}}>
                     {bikeCards}
                 </Row>
+                <Footer />
             </div>
         );
     }
