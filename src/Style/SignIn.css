@@ -24,7 +24,7 @@
 .submit{
     margin : 2rem auto auto 2rem;
 }
-@media screen and (device-width : 360px){
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
     .form-container{
         display: block;
         margin: 3rem  auto;

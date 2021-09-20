@@ -7,7 +7,7 @@
 .h1{
     margin-left: 42%;
 }
-@media screen and (device-width : 360px){
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
     .Header{
         display: block;
         color : #568A88;
